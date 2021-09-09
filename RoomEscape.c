@@ -1,3 +1,8 @@
+/*
+ê°œë°œì:ì•ˆì¢…ì§„,ì •íƒœì„±
+ê°œë°œì¼:09.08
+ë¬¸ì˜:gj2719@naver.com
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -9,12 +14,12 @@
 
 void intro();
 void room();
-void a1(); //Ä§´ë 
-void a2(); //ÆíÁö 
-void a3(); //¼­¶ø 
-void a4(); //È­ºĞ 
-void a5(); //»óÀÚ 
-void a6(); //ÃâÀÔ ¹®
+void a1(); //ì¹¨ëŒ€ 
+void a2(); //í¸ì§€ 
+void a3(); //ì„œë 
+void a4(); //í™”ë¶„ 
+void a5(); //ìƒì 
+void a6(); //ì¶œì… ë¬¸
  
 int isFindKey1 = FALSE;
 int isFindKey2 = FALSE;
@@ -29,9 +34,9 @@ int main() {
 	int menu;
 	
 	while(1) {
-		printf("¹æÅ»Ãâ\n\n");
-		printf("1. ÀÔÀå\n");
-		printf("0. Á¾·á\n");
+		printf("ë°©íƒˆì¶œ\n\n");
+		printf("1. ì…ì¥\n");
+		printf("0. ì¢…ë£Œ\n");
 		printf(">> ");
 		scanf("%d", &menu);
 		
@@ -43,7 +48,7 @@ int main() {
 			case 0:
 				return 0;
 			default:
-				printf("ÀÔ·Â ¿À·ù\n\n");
+				printf("ì…ë ¥ ì˜¤ë¥˜\n\n");
 				break;
 		}
 	}
@@ -54,10 +59,10 @@ void room() {
 	
 	while(1) {
 		system("cls");	
-		printf("µ¶¹æ\n\n");
-		printf("¹æ ¾È¿¡¼­ ¿­¼èÁ¶°¢µéÀ» Ã£¾Æº¸ÀÚ.\n\n");
-		printf("1. Ä§´ë     2. ÆíÁö    3. ¼­¶ø\n");
-		printf("4. È­ºĞ    5. »óÀÚ    6. ÃâÀÔ¹®\n");
+		printf("ë…ë°©\n\n");
+		printf("ë°© ì•ˆì—ì„œ ì—´ì‡ ì¡°ê°ë“¤ì„ ì°¾ì•„ë³´ì.\n\n");
+		printf("1. ì¹¨ëŒ€     2. í¸ì§€    3. ì„œë\n");
+		printf("4. í™”ë¶„    5. ìƒì    6. ì¶œì…ë¬¸\n");
 			
 		printf(">> ");
 		scanf("%d", &menu);
@@ -82,7 +87,7 @@ void room() {
 				a6();
 				break;
 			default:
-				printf("\n# ERROR # ÀÔ·Â°ª ¿À·ù\n");
+				printf("\n# ERROR # ì…ë ¥ê°’ ì˜¤ë¥˜\n");
 				system("pause");
 		}
 	}
@@ -92,11 +97,11 @@ void room() {
 void intro() {
 	system("cls");
 	printf("\n\n");
-	printf("Å×·¯¹üÀÇ Å×·¯·Î ÀÎÇØ ÀÎÁú·Î ÀâÇôÀÖ´Ù\n");
+	printf("í…ŒëŸ¬ë²”ì˜ í…ŒëŸ¬ë¡œ ì¸í•´ ì¸ì§ˆë¡œ ì¡í˜€ìˆë‹¤\n");
 	Sleep(1500);
-	printf("Å×·¯¹ü »çÀÌ¿¡ ÀÖ´Â ½ºÆÄÀÌ°¡ ¿­¼èÁ¶°¢µéÀ» ¹æ¾È¿¡ ¼û°Ü³õ¾ÒÀ» °ÍÀÌ´Ù .\n\n");
+	printf("í…ŒëŸ¬ë²” ì‚¬ì´ì— ìˆëŠ” ìŠ¤íŒŒì´ê°€ ì—´ì‡ ì¡°ê°ë“¤ì„ ë°©ì•ˆì— ìˆ¨ê²¨ë†“ì•˜ì„ ê²ƒì´ë‹¤ .\n\n");
 	Sleep(1500);
-	printf("¿­¼è Á¶°¢ 6°³¸¦ Ã£¾Æ³»¼­ ¹®À» ¿­°í Å»ÃâÇØ¾ßÇÑ´Ù.\n\n");
+	printf("ì—´ì‡  ì¡°ê° 6ê°œë¥¼ ì°¾ì•„ë‚´ì„œ ë¬¸ì„ ì—´ê³  íƒˆì¶œí•´ì•¼í•œë‹¤.\n\n");
 	Sleep(1500);
 	system("pause");
 }
@@ -106,10 +111,10 @@ void a2(){
 	
 	while(1) {
 		system("cls");
-		printf("[µ¶¹æ]-[ÆíÁö]\n\n");
-		printf("1. ÆíÁö¸¦ »ìÆìº»´Ù\n");
-		printf("2. ÆíÁö¸¦ ¿¬´Ù\n");
-		printf("0. µ¹¾Æ°¡±â\n");
+		printf("[ë…ë°©]-[í¸ì§€]\n\n");
+		printf("1. í¸ì§€ë¥¼ ì‚´í´ë³¸ë‹¤\n");
+		printf("2. í¸ì§€ë¥¼ ì—°ë‹¤\n");
+		printf("0. ëŒì•„ê°€ê¸°\n");
 		
 		printf(">> ");
 		scanf("%d", &menu);
@@ -120,17 +125,17 @@ void a2(){
 				break;
 			case 2:
 				if(isFindKey1 && isFindKey2) {
-							printf("\n¿­¼èÁ¶°¢ ÀÌ¹Ì Ã£À½.\n\n");
+							printf("\nì—´ì‡ ì¡°ê° ì´ë¯¸ ì°¾ìŒ.\n\n");
 						} else {
 							isFindKey1 = TRUE;
 							isFindKey2 = TRUE;
-							printf("\n¿­¼èÁ¶°¢ 2°³¸¦ Ã£À½\n\n");
+							printf("\nì—´ì‡ ì¡°ê° 2ê°œë¥¼ ì°¾ìŒ\n\n");
 						}
 						break;
 			case 0:
 				return;
 			default:
-				printf("\n# ERROR # ÀÔ·Â°ª ¿À·ù\n\n");
+				printf("\n# ERROR # ì…ë ¥ê°’ ì˜¤ë¥˜\n\n");
 				break;
 		}
 		system("pause");
@@ -142,9 +147,9 @@ void a1(){
 	
 	while(1) {
 		system("cls");
-		printf("[µ¶¹æ]-[Ä§´ë]\n\n");
-		printf("1. Ä§´ë¸¦ »ìÆìº»´Ù\n");
-		printf("0. µ¹¾Æ°¡±â\n");
+		printf("[ë…ë°©]-[ì¹¨ëŒ€]\n\n");
+		printf("1. ì¹¨ëŒ€ë¥¼ ì‚´í´ë³¸ë‹¤\n");
+		printf("0. ëŒì•„ê°€ê¸°\n");
 		
 		printf(">> ");
 		scanf("%d", &menu);
@@ -152,16 +157,16 @@ void a1(){
 		switch(menu) {
 			case 1:
 			if(isFindKey3) {
-							printf("\n¿­¼èÁ¶°¢ ÀÌ¹Ì Ã£À½.\n\n");
+							printf("\nì—´ì‡ ì¡°ê° ì´ë¯¸ ì°¾ìŒ.\n\n");
 						} else {
 							isFindKey3 = TRUE;
-							printf("\n¿­¼èÁ¶°¢ 3À» Ã£À½\n\n");
+							printf("\nì—´ì‡ ì¡°ê° 3ì„ ì°¾ìŒ\n\n");
 						}
 						break;
 			case 0:
 				return;
 			default:
-				printf("\n# ERROR # ÀÔ·Â°ª ¿À·ù\n\n");
+				printf("\n# ERROR # ì…ë ¥ê°’ ì˜¤ë¥˜\n\n");
 				break;
 		}
 		system("pause");
@@ -173,30 +178,30 @@ void a3(){
 	
 	while(1) {
 		system("cls");
-		printf("[µ¶¹æ]-[¼­¶ø]\n\n");
-		printf("1. ¼­¶øÀ» »ìÆìº»´Ù\n");
-		printf("2. ¼­¶øÀ» ºĞÇØÇØº»´Ù\n");
-		printf("0. µ¹¾Æ°¡±â\n");
+		printf("[ë…ë°©]-[ì„œë]\n\n");
+		printf("1. ì„œëì„ ì‚´í´ë³¸ë‹¤\n");
+		printf("2. ì„œëì„ ë¶„í•´í•´ë³¸ë‹¤\n");
+		printf("0. ëŒì•„ê°€ê¸°\n");
 		
 		printf(">> ");
 		scanf("%d", &menu);
 		
 		switch(menu) {
 			case 1:
-				printf("\n¾Æ¹«°Íµµ ¾øÀ½\n\n");
+				printf("\nì•„ë¬´ê²ƒë„ ì—†ìŒ\n\n");
 				return;
 			case 2:
 				if(isFindKey4) {
-							printf("\n¿­¼èÁ¶°¢ ÀÌ¹Ì Ã£À½.\n\n");
+							printf("\nì—´ì‡ ì¡°ê° ì´ë¯¸ ì°¾ìŒ.\n\n");
 						} else {
 							isFindKey4 = TRUE;
-							printf("\nºĞÇØÇÏ¿© Á¶°¢4 Ã£À½\n\n");
+							printf("\në¶„í•´í•˜ì—¬ ì¡°ê°4 ì°¾ìŒ\n\n");
 						}
 						break;
 			case 0:
 				return;
 			default:
-				printf("\n# ERROR # ÀÔ·Â°ª ¿À·ù\n\n");
+				printf("\n# ERROR # ì…ë ¥ê°’ ì˜¤ë¥˜\n\n");
 				break;
 		}
 		system("pause");
@@ -209,30 +214,30 @@ void a4(){
 	
 	while(1) {
 		system("cls");
-		printf("[µ¶¹æ]-[¼­¶ø]\n\n");
-		printf("1. È­ºĞÀ» »ìÆìº»´Ù\n");
-		printf("2. ÈëÀ» ÆÄ³»¾î º»´Ù\n");
-		printf("0. µ¹¾Æ°¡±â\n");
+		printf("[ë…ë°©]-[ì„œë]\n\n");
+		printf("1. í™”ë¶„ì„ ì‚´í´ë³¸ë‹¤\n");
+		printf("2. í™ì„ íŒŒë‚´ì–´ ë³¸ë‹¤\n");
+		printf("0. ëŒì•„ê°€ê¸°\n");
 		
 		printf(">> ");
 		scanf("%d", &menu);
 		
 		switch(menu) {
 			case 1:
-				printf("\n¾Æ¹«°Íµµ ¾øÀ½\n\n");
+				printf("\nì•„ë¬´ê²ƒë„ ì—†ìŒ\n\n");
 				return;
 			case 2:
 				if(isFindKey5) {
-							printf("\n¿­¼èÁ¶°¢ ÀÌ¹Ì Ã£À½.\n\n");
+							printf("\nì—´ì‡ ì¡°ê° ì´ë¯¸ ì°¾ìŒ.\n\n");
 						} else {
 							isFindKey5 = TRUE;
-							printf("\nºĞÇØÇÏ¿© Á¶°¢5 Ã£À½\n\n");
+							printf("\në¶„í•´í•˜ì—¬ ì¡°ê°5 ì°¾ìŒ\n\n");
 						}
 						break;
 			case 0:
 				return;
 			default:
-				printf("\n# ERROR # ÀÔ·Â°ª ¿À·ù\n\n");
+				printf("\n# ERROR # ì…ë ¥ê°’ ì˜¤ë¥˜\n\n");
 				break;
 		}
 		system("pause");
@@ -244,9 +249,9 @@ void a5(){
 	
 	while(1) {
 		system("cls");
-		printf("[µ¶¹æ]-[»óÀÚ]\n\n");
-		printf("1. ºñ¹Ğ¹øÈ£ ÀÔ·Â\n");
-		printf("0. µ¹¾Æ°¡±â\n");
+		printf("[ë…ë°©]-[ìƒì]\n\n");
+		printf("1. ë¹„ë°€ë²ˆí˜¸ ì…ë ¥\n");
+		printf("0. ëŒì•„ê°€ê¸°\n");
 		
 		printf(">> ");
 		scanf("%d", &menu);
@@ -254,16 +259,16 @@ void a5(){
 		switch(menu) {
 			case 1:
 				if(isFindKey6) {
-							printf("\n¿­¼èÁ¶°¢ ÀÌ¹Ì Ã£À½.\n\n");
+							printf("\nì—´ì‡ ì¡°ê° ì´ë¯¸ ì°¾ìŒ.\n\n");
 						} else {
 							isFindKey6 = TRUE;
-							printf("\nÆíÁö¿¡ ÀÖ´ø ¾ÏÈ£¸¦ ÀÔ·ÂÇÏ¿© ¿­¼èÁ¶°¢ 5À» ¾ò¾ú´Ù\n\n");
+							printf("\ní¸ì§€ì— ìˆë˜ ì•”í˜¸ë¥¼ ì…ë ¥í•˜ì—¬ ì—´ì‡ ì¡°ê° 5ì„ ì–»ì—ˆë‹¤\n\n");
 						}
 						break;
 			case 0:
 				return;
 			default:
-				printf("\n# ERROR # ÀÔ·Â°ª ¿À·ù\n\n");
+				printf("\n# ERROR # ì…ë ¥ê°’ ì˜¤ë¥˜\n\n");
 				break;
 		}
 		system("pause");
@@ -275,10 +280,10 @@ void a6(){
 	
 	while(1) {
 		system("cls");
-		printf("[µ¶¹æ]-[¹®]\n\n");
-		printf("¾öÃ» ´Ü´ÜÇØº¸ÀÌ´Â ±İ°í´Ù.\n\n");
-		printf("1. ¹®¸¦ ¿¬´Ù\n");
-		printf("0. µ¹¾Æ°¡±â\n");
+		printf("[ë…ë°©]-[ë¬¸]\n\n");
+		printf("ì—„ì²­ ë‹¨ë‹¨í•´ë³´ì´ëŠ” ê¸ˆê³ ë‹¤.\n\n");
+		printf("1. ë¬¸ë¥¼ ì—°ë‹¤\n");
+		printf("0. ëŒì•„ê°€ê¸°\n");
 		
 		printf(">> ");
 		scanf("%d", &menu);
@@ -287,15 +292,15 @@ void a6(){
 			case 1:
 				if(isFindKey1 && isFindKey2 && isFindKey3 && isFindKey4 &&isFindKey5 && isFindKey6 ) {
 					isOpena6 = TRUE; 
-					printf("Å»Ãâ ¼º°ø");
+					printf("íƒˆì¶œ ì„±ê³µ");
 				} else {
-					printf("\n¿­¼è¸¦ ¸ø±¸ÇÔ.\n\n");
+					printf("\nì—´ì‡ ë¥¼ ëª»êµ¬í•¨.\n\n");
 				}
 				break;
 			case 0:
 				return;
 			default:
-				printf("\n# ERROR # ÀÔ·Â°ª ¿À·ù\n\n");
+				printf("\n# ERROR # ì…ë ¥ê°’ ì˜¤ë¥˜\n\n");
 				break;
 		}
 		system("pause");
